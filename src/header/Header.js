@@ -10,10 +10,10 @@ export class Header extends React.Component {
                         <a className="navbar-brand" href="home">Dan S</a>
                     </div>
                     <ul className="nav navbar-nav">
-                        <NavLink activeClassName="active"><a >Home</a></NavLink>
-                        <NavLink activeClassName="active"><a>Page 1</a></NavLink>
-                        <NavLink activeClassName="active"><a>Page 2</a></NavLink>
-                        <NavLink activeClassName="active"><a>Page 3</a></NavLink>
+                        <li><NavLink activeStyle={{color: "red"}} activeClassName="active" to="/">Home</NavLink></li>
+                        <li><NavLink activeClassName="active" to="/page1">Page 1</NavLink></li>
+                        <li><NavLink activeClassName="active" to="/page2">Page 2</NavLink></li>
+                        <li><NavLink activeClassName="active" to="/page3">Page 3</NavLink></li>
                     </ul>
                 </div>
             </div>
